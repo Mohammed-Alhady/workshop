@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="A page containing all major HTML tags." />
+    <meta name="author" content="Your Name" />
+    <title>HTML Tags Example</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="src/style/main.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="bg-primary text-white text-center py-5">
+      <h1>This is an H1 Heading</h1>
+      <h2>This is an H2 Heading</h2>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="text-center mb-4">
+      <ul class="list-inline">
+        <li class="list-inline-item"><a href="#one">Home</a></li>
+        <li class="list-inline-item"><a href="#two">About</a></li>
+        <li class="list-inline-item"><a href="#three">Services</a></li>
+        <li class="list-inline-item"><a href="#four">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- Section with a paragraph -->
+    <section id="one" class="mb-4 p-4 bg-white rounded shadow">
+      <h2>About HTML Tags</h2>
+      <p>
+        This paragraph demonstrates the use of common HTML elements such as
+        <strong>bold</strong> and <em>italic</em> text.
+      </p>
+      <p>
+        You can also add
+        <abbr title="HyperText Markup Language">HTML</abbr> abbreviations and
+        links like <a href="https://www.example.com">this one</a>.
+      </p>
+      <blockquote
+        class="border-left pl-3 text-muted"
+        cite="https://www.example.com"
+      >
+        "This is a blockquote used for quoting large sections of text."
+      </blockquote>
+    </section>
+
+    <!-- Article -->
+    <article id="two" class="mb-4 p-4 bg-white rounded shadow">
+      <h2>Lists</h2>
+      <p>Here is an unordered list:</p>
+      <ul class="list-unstyled">
+        <li>First item</li>
+        <li>Second item</li>
+        <li>Third item</li>
+      </ul>
+
+      <p>And here is an ordered list:</p>
+      <ol>
+        <li>First item</li>
+        <li>Second item</li>
+        <li>Third item</li>
+      </ol>
+    </article>
+
+    <!-- Table -->
+    <section id="three" class="mb-4 p-4 bg-white rounded shadow">
+      <h2>Table</h2>
+      <table class="table table-bordered">
+        <caption class="font-weight-bold text-primary mb-2">
+          Sample Table
+        </caption>
+        <thead class="thead-dark">
+          <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Occupation</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>John</td>
+            <td>30</td>
+            <td>Engineer</td>
+          </tr>
+          <tr>
+            <td>Jane</td>
+            <td>25</td>
+            <td>Designer</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Form -->
+    <section id="four" class="mb-4 p-4 bg-white rounded shadow">
+      <h2>Form Example</h2>
+      <form action="#" method="POST">
+        <div class="form-group">
+          <label for="name">Name:</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            class="form-control"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            class="form-control"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="message">Message:</label>
+          <textarea
+            id="message"
+            name="message"
+            rows="4"
+            class="form-control"
+          ></textarea>
+        </div>
+
+        <div class="form-group">
+          <label for="gender">Gender:</label>
+          <div class="form-check">
+            <input
+              type="radio"
+              id="male"
+              name="gender"
+              value="male"
+              class="form-check-input"
+            />
+            <label for="male" class="form-check-label">Male</label>
+          </div>
+          <div class="form-check">
+            <input
+              type="radio"
+              id="female"
+              name="gender"
+              value="female"
+              class="form-check-input"
+            />
+            <label for="female" class="form-check-label">Female</label>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="subscription">Subscribe:</label>
+          <div class="form-check">
+            <input
+              type="checkbox"
+              id="subscription"
+              name="subscription"
+              value="yes"
+              class="form-check-input"
+            />
+            <label for="subscription" class="form-check-label"
+              >Yes, sign me up!</label
+            >
+          </div>
+        </div>
+
+        <input type="submit" value="Submit" class="btn btn-primary" />
+      </form>
+    </section>
+
+    <!-- Media Elements -->
+    <section class="mb-4 p-4 bg-white rounded shadow">
+      <h2>Media</h2>
+      <p>Here is an image:</p>
+      <img
+        src="https://via.placeholder.com/150"
+        alt="Placeholder Image"
+        class="img-fluid rounded mb-3"
+      />
+
+      <p>Here is an embedded video:</p>
+      <video controls width="250" class="mb-3">
+        <source src="sample-video.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+
+      <p>Here is an embedded audio file:</p>
+      <audio controls class="mb-3">
+        <source src="sample-audio.mp3" type="audio/mp3" />
+        Your browser does not support the audio element.
+      </audio>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-primary text-white text-center py-2">
+      <p>&copy; 2024 eta coding - Mohammed Alhady. All rights reserved.</p>
+    </footer>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="src/js/main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

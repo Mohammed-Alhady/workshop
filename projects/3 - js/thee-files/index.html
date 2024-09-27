@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="A page containing all major HTML tags." />
+    <meta name="author" content="Your Name" />
+    <link rel="stylesheet" href="style.css" />
+    <title>HTML Tags Example</title>
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <h1>This is an H1 Heading</h1>
+      <h2>This is an H2 Heading</h2>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+      <ul>
+        <li><a href="#one">Home</a></li>
+        <li><a href="#two">About</a></li>
+        <li><a href="#three">Services</a></li>
+        <li><a href="#four">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- Section with a paragraph -->
+    <section id="one">
+      <h2>About HTML Tags</h2>
+      <p>
+        This paragraph demonstrates the use of common HTML elements such as
+        <strong>bold</strong> and <em>italic</em> text.
+      </p>
+      <p>
+        You can also add
+        <abbr title="HyperText Markup Language">HTML</abbr> abbreviations and
+        links like <a href="https://www.example.com">this one</a>.
+      </p>
+      <blockquote cite="https://www.example.com">
+        "This is a blockquote used for quoting large sections of text."
+      </blockquote>
+    </section>
+
+    <!-- Article -->
+    <article id="two">
+      <h2>Lists</h2>
+      <p>Here is an unordered list:</p>
+      <ul>
+        <li>First item</li>
+        <li>Second item</li>
+        <li>Third item</li>
+      </ul>
+
+      <p>And here is an ordered list:</p>
+      <ol>
+        <li>First item</li>
+        <li>Second item</li>
+        <li>Third item</li>
+      </ol>
+    </article>
+
+    <!-- Table -->
+    <section id="three">
+      <h2>Table</h2>
+      <table>
+        <caption>
+          Sample Table
+        </caption>
+        <tr>
+          <th>Name</th>
+          <th>Age</th>
+          <th>Occupation</th>
+        </tr>
+        <tr>
+          <td>John</td>
+          <td>30</td>
+          <td>Engineer</td>
+        </tr>
+        <tr>
+          <td>Jane</td>
+          <td>25</td>
+          <td>Designer</td>
+        </tr>
+      </table>
+    </section>
+
+    <!-- Form -->
+    <section id="four">
+      <h2>Form Example</h2>
+      <form action="#" method="POST">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required />
+        <br /><br />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+        <br /><br />
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" cols="50"></textarea>
+        <br /><br />
+
+        <label for="gender">Gender:</label>
+        <input type="radio" id="male" name="gender" value="male" />
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female" />
+        <label for="female">Female</label>
+        <br /><br />
+
+        <label for="subscription">Subscribe:</label>
+        <input
+          type="checkbox"
+          id="subscription"
+          name="subscription"
+          value="yes"
+        />
+        <label for="subscription">Yes, sign me up!</label>
+        <br /><br />
+
+        <input type="submit" value="Submit" />
+      </form>
+    </section>
+
+    <!-- Media Elements -->
+    <section>
+      <h2>Media</h2>
+      <p>Here is an image:</p>
+      <img src="https://via.placeholder.com/150" alt="Placeholder Image" />
+
+      <p>Here is an embedded video:</p>
+      <video controls width="250">
+        <source src="sample-video.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+
+      <p>Here is an embedded audio file:</p>
+      <audio controls>
+        <source src="sample-audio.mp3" type="audio/mp3" />
+        Your browser does not support the audio element.
+      </audio>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <p>&copy; 2024 eta coding - Mohammed Alhady. All rights reserved.</p>
+    </footer>
+
+    <script src="main.js"></script>
+  </body>
+</html>

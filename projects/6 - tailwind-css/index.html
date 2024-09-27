@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="A page containing all major HTML tags." />
+    <meta name="author" content="Your Name" />
+    <title>HTML Tags Example</title>
+    <!-- Tailwind CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="src/style/main.css" />
+  </head>
+  <body class="bg-gray-100 text-gray-800">
+    <!-- Header -->
+    <header class="bg-blue-600 text-white text-center py-10">
+      <h1 class="text-4xl">This is an H1 Heading</h1>
+      <h2 class="text-2xl mt-2">This is an H2 Heading</h2>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="text-center mb-4">
+      <ul class="flex justify-center space-x-4">
+        <li>
+          <a class="text-blue-600 hover:text-blue-800" href="#one">Home</a>
+        </li>
+        <li>
+          <a class="text-blue-600 hover:text-blue-800" href="#two">About</a>
+        </li>
+        <li>
+          <a class="text-blue-600 hover:text-blue-800" href="#three"
+            >Services</a
+          >
+        </li>
+        <li>
+          <a class="text-blue-600 hover:text-blue-800" href="#four">Contact</a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- Section with a paragraph -->
+    <section id="one" class="mb-4 p-4 bg-white rounded shadow">
+      <h2 class="text-xl">About HTML Tags</h2>
+      <p>
+        This paragraph demonstrates the use of common HTML elements such as
+        <strong>bold</strong> and <em>italic</em> text.
+      </p>
+      <p>
+        You can also add
+        <abbr title="HyperText Markup Language">HTML</abbr> abbreviations and
+        links like
+        <a
+          class="text-blue-600 hover:text-blue-800"
+          href="https://www.example.com"
+          >this one</a
+        >.
+      </p>
+      <blockquote class="border-l-4 border-blue-600 pl-3 text-gray-600 italic">
+        "This is a blockquote used for quoting large sections of text."
+      </blockquote>
+    </section>
+
+    <!-- Article -->
+    <article id="two" class="mb-4 p-4 bg-white rounded shadow">
+      <h2 class="text-xl">Lists</h2>
+      <p>Here is an unordered list:</p>
+      <ul class="list-disc ml-5">
+        <li>First item</li>
+        <li>Second item</li>
+        <li>Third item</li>
+      </ul>
+
+      <p>And here is an ordered list:</p>
+      <ol class="list-decimal ml-5">
+        <li>First item</li>
+        <li>Second item</li>
+        <li>Third item</li>
+      </ol>
+    </article>
+
+    <!-- Table -->
+    <section id="three" class="mb-4 p-4 bg-white rounded shadow">
+      <h2 class="text-xl">Table</h2>
+      <table class="min-w-full border-collapse border border-gray-300">
+        <caption class="font-bold text-blue-600 mb-2">
+          Sample Table
+        </caption>
+        <thead>
+          <tr class="bg-blue-600 text-white">
+            <th class="border border-gray-300 p-2">Name</th>
+            <th class="border border-gray-300 p-2">Age</th>
+            <th class="border border-gray-300 p-2">Occupation</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="border border-gray-300 p-2">John</td>
+            <td class="border border-gray-300 p-2">30</td>
+            <td class="border border-gray-300 p-2">Engineer</td>
+          </tr>
+          <tr>
+            <td class="border border-gray-300 p-2">Jane</td>
+            <td class="border border-gray-300 p-2">25</td>
+            <td class="border border-gray-300 p-2">Designer</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Form -->
+    <section id="four" class="mb-4 p-4 bg-white rounded shadow">
+      <h2 class="text-xl">Form Example</h2>
+      <form action="#" method="POST">
+        <div class="mb-4">
+          <label for="name" class="block font-bold">Name:</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            class="mt-1 block w-full border border-gray-300 rounded p-2"
+            required
+          />
+        </div>
+
+        <div class="mb-4">
+          <label for="email" class="block font-bold">Email:</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            class="mt-1 block w-full border border-gray-300 rounded p-2"
+            required
+          />
+        </div>
+
+        <div class="mb-4">
+          <label for="message" class="block font-bold">Message:</label>
+          <textarea
+            id="message"
+            name="message"
+            rows="4"
+            class="mt-1 block w-full border border-gray-300 rounded p-2"
+          ></textarea>
+        </div>
+
+        <div class="mb-4">
+          <label for="gender" class="block font-bold">Gender:</label>
+          <div class="flex items-center mb-2">
+            <input
+              type="radio"
+              id="male"
+              name="gender"
+              value="male"
+              class="mr-2"
+            />
+            <label for="male">Male</label>
+          </div>
+          <div class="flex items-center mb-2">
+            <input
+              type="radio"
+              id="female"
+              name="gender"
+              value="female"
+              class="mr-2"
+            />
+            <label for="female">Female</label>
+          </div>
+        </div>
+
+        <div class="mb-4">
+          <label for="subscription" class="block font-bold">Subscribe:</label>
+          <div class="flex items-center mb-2">
+            <input
+              type="checkbox"
+              id="subscription"
+              name="subscription"
+              value="yes"
+              class="mr-2"
+            />
+            <label for="subscription">Yes, sign me up!</label>
+          </div>
+        </div>
+
+        <button type="submit" class="bg-blue-600 text-white px-4 py-2 rounded">
+          Submit
+        </button>
+      </form>
+    </section>
+
+    <!-- Media Elements -->
+    <section class="mb-4 p-4 bg-white rounded shadow">
+      <h2 class="text-xl">Media</h2>
+      <p>Here is an image:</p>
+      <img
+        src="https://via.placeholder.com/150"
+        alt="Placeholder Image"
+        class="mb-3 rounded"
+      />
+
+      <p>Here is an embedded video:</p>
+      <video controls width="250" class="mb-3 rounded">
+        <source src="sample-video.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+
+      <p>Here is an embedded audio file:</p>
+      <audio controls class="mb-3">
+        <source src="sample-audio.mp3" type="audio/mp3" />
+        Your browser does not support the audio element.
+      </audio>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-blue-600 text-white text-center py-2">
+      <p>&copy; 2024 eta coding - Mohammed Alhady. All rights reserved.</p>
+    </footer>
+
+    <!-- Tailwind CSS JS and dependencies -->
+    <script src="src/js/main.js"></script>
+  </body>
+</html>
+s
